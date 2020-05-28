@@ -3,11 +3,8 @@ package guru.springframework.domain;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
-/**
- * Created by jt on 6/17/17.
- */
 public class CategoryTest {
 
     Category category;
@@ -18,20 +15,19 @@ public class CategoryTest {
     }
 
     @Test
-    public void getId() throws Exception {
+    public void getId() {
         Long idValue = 4L;
 
-        category.setId(idValue);
+        category.setId(4L);
 
         assertEquals(idValue, category.getId());
     }
 
     @Test
-    public void getDescription() throws Exception {
+    public void getDescription() {
     }
 
     @Test
-    public void getRecipes() throws Exception {
+    public void getRecipes() {
     }
-
 }

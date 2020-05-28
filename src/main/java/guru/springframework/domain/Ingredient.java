@@ -42,4 +42,11 @@ public class Ingredient {
         this.recipe = recipe;
     }
 
+    @Override
+    public String toString() {
+        return "Ingredient{" +
+                "id=" + id +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }
