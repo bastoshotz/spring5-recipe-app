@@ -44,7 +44,7 @@ public class RecipeCommandToRecipe implements Converter<RecipeCommand, Recipe> {
         recipe.setDirections(recipeCommand.getDirections());
 
         Set<Ingredient> ingredients = new HashSet<>();
-        recipeCommand.getIngredientes().stream().forEach( ingredientCommand -> {
+        recipeCommand.getIngredients().stream().forEach( ingredientCommand -> {
             ingredients.add(ingredientConverter.convert(ingredientCommand));
         });
         recipe.setIngredients(ingredients);

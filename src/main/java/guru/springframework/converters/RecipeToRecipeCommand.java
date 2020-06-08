@@ -48,7 +48,7 @@ public class RecipeToRecipeCommand implements Converter<Recipe, RecipeCommand> {
         recipe.getIngredients().stream().forEach(ingredient -> {
             ingredientCommands.add(ingredientConverter.convert(ingredient));
         });
-        recipeCommand.setIngredientes(ingredientCommands);
+        recipeCommand.setIngredients(ingredientCommands);
 
         recipeCommand.setImage(recipe.getImage());
         recipeCommand.setDifficulty(recipe.getDifficulty());
